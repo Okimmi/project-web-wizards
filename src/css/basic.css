@@ -1,0 +1,37 @@
+body {
+  font-family: var(--main-font-family);
+  font-size: var(--main-font-family);
+  font-weight: var(--main-font-weight);
+  color: var(main-color);
+  background-color: var(--main-background-color);
+}
+
+.container {
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 374px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    margin: 0 auto;
+    width: 375px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
+}
