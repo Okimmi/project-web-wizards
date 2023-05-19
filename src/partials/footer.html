@@ -1,14 +1,26 @@
-<footer class="footer container">
-  <div class="footer-container">
-    <div class="footer-logo">
-      <img src="" alt="Woman with fruits">
-      <a href="./index.html">fresh harvest box</a>
+<footer class="footer-section section">
+  <div class="footer-container container">
+    <div class="footer-logo-container">
+                <img
+                srcset="
+                ../img/footer-image/footer-image-mobile@1x.jpg 335w,
+                ../img/footer-image/footer-image-mobile@2x.jpg 670w,
+                ../img/footer-image/footer-image-tablet-desk@1x.jpg 349w,
+                ../img/footer-image/footer-image-tablet-desk@2x.jpg 698w
+                "
+                sizes="(min-width: 768px) 349px, (min-width: 378px) 335px, 100vw"
+                src="../img/footer-image/footer-image-mobile@1x.jpg" alt="woman with fruits banana"
+                loading="lazy"
+                />
+      <a href="./index.html" class="footer-logo-link"><svg class="footer-logo-icon" width="16" height="16">
+        <use href="../img/icons.svg#icon-logo"></use>
+      </svg>Fresh harvest box</a>
     </div>
     <div class="footer-menu">
       <ul class="footer-menu-list">
-        <li><a href="">How It Works</a></li>
-        <li><a href="">Fruits</a></li>
-        <li><a href="">Contacts</a></li>
+        <li><a href="../css/how-it-works.css">How It Works</a></li>
+        <li><a href="../css/fruits.css">Fruits</a></li>
+        <li><a href="../css/contacts.css">Contacts</a></li>
       </ul>
     </div>
     <div class="footer-contacts">
@@ -17,24 +29,24 @@
             <a href="https://www.facebook.com/"
             rel="noopener noreferer"
             target="_blank">
-            <svg class="social-net-icon" width="" height="">
-              <use href=""></use>
+            <svg class="social-net-icon" width="24" height="24">
+              <use href="../img/icons.svg#icon-facebook"></use>
             </svg></a>
           </li>
           <li class="social-net-item-link">
             <a href="https://www.instagram.com/"
             rel="noopener noreferer"
             target="_blank">
-              <svg class="social-net-icon" width="" height="">
-              <use href=""></use>
+              <svg class="social-net-icon" width="24" height="24">
+              <use href="../img/icons.svg#icon-instagram"></use>
             </svg></a>
           </li>
           <li class="social-net-item-link">
             <a href="https://www.youtube.com/goit"
             rel="noopener noreferer"
             target="_blank">
-              <svg class="social-net-icon" width="" height="">
-              <use href=""></use>
+              <svg class="social-net-icon" width="24" height="24">
+              <use href="../img/icons.svg#icon-youtube"></use>
             </svg></a>
           </li>
         </ul>
@@ -47,8 +59,8 @@
             <a href="https://www.google.com/maps/place/1678+Pioneer+Rd,+Salt+Lake+City,+UT+84104,+%D0%A1%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D1%96+%D0%A8%D1%82%D0%B0%D1%82%D0%B8+%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B8/@40.7335892,-111.9600867,17z/data=!3m1!4b1!4m6!3m5!1s0x8752f35b0826d399:0x2b26230524fd3ca3!8m2!3d40.7335892!4d-111.9600867!16s%2Fg%2F11bw41vm_p" 
             rel="noopener noreferer"
             target="_blank"
-            class="address-link">1678 S. Pioneer Road
-              Salt Lake City
+            class="address-link">1678 S. Pioneer Road <br>
+              Salt Lake City <br>
               UT 84104</a>
           </li>
         </ul>
