@@ -1,0 +1,57 @@
+.header {
+  outline: 3px solid teal;
+  background-color: var(--main-color);
+}
+
+.list {
+}
+
+.nav-header {
+}
+
+@media screen and (max-width: 767px) {
+  .nav-header {
+    display: none;
+  }
+}
+
+.nav-list {
+  display: flex;
+  gap: 20px;
+}
+
+.link {
+}
+
+.nav-link {
+}
+
+.logo-header {
+}
+.text-logo {
+  text-transform: uppercase;
+}
+
+.heder-btn {
+}
+
+@media screen and (max-width: 767px) {
+  .heder-btn {
+    display: none;
+  }
+}
+
+.icon-cart {
+}
+
+.mobile-menu {
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+.mobile-menu-icon {
+}
