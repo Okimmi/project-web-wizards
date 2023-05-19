@@ -30,6 +30,14 @@ button {
 
 img {
   display: block;
-  max-width: 100%;
-  height: auto;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
 }

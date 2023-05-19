@@ -1,0 +1,64 @@
+.header {
+  background-color: var(--main-color);
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-header {
+}
+
+@media screen and (max-width: 767px) {
+  .nav-header {
+    display: none;
+  }
+}
+
+.nav-list {
+  display: flex;
+  gap: 20px;
+}
+
+.link {
+}
+
+.nav-link {
+  padding: 16px 0;
+  display: inline-block;
+}
+
+.logo-header {
+}
+.text-logo {
+  text-transform: uppercase;
+}
+
+.heder-btn {
+  background-color: var(--main-color);
+  border-color: transparent;
+}
+
+@media screen and (max-width: 767px) {
+  .heder-btn {
+    display: none;
+  }
+}
+
+.icon-cart {
+}
+
+.mobile-menu {
+  background-color: var(--main-color);
+  border-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+.mobile-menu-icon {
+}
