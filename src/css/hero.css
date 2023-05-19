@@ -1,0 +1,29 @@
+.hero{
+    background: #AE1332;
+    background-image: url(../img/imagebanana.png),url(../img/imageberry.png);
+    background-repeat: no-repeat;
+    background-size:182px, 128px;
+    background-position: right, left;
+    rotate: -20%;
+}
+.hero-btn{
+    width: 114px;
+    height: 114px;
+    background-color: #FFFFFF;
+    font-weight: 500;
+    font-size: 28px;
+    color: #AE1332;
+    cursor: pointer;
+    border:none;
+    border-radius: 500px;
+}
+.hero-btn:focus,
+.hero-btn:hover{
+    color: #a4cb66;
+}
+.title-hero{
+    font-weight: 500;
+    font-size: 64px;
+    color: #FFFFFF;
+    text-align: center;
+}
