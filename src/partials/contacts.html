@@ -3,27 +3,62 @@
     <h2 class="">Fresh Harvest Box has got you covered</h2>
     <ul class="contacts-list list">
       <li class="contacts-item">
-        <img 
-        src="../img/contacts/melon_desc@1x.jpg" 
-        alt="melon"
-        width=""
-        loading="lazy"
-        ></li>
+        <picture>
+          <!-- Destop -->
+          <source
+          media="(min-width: 1280px)"
+          srcset="../img/contacts/melon_desc@1x.jpg 1x, ../img/contacts/melon_desc@2x.jpg 2x," 
+          type="image/jpg">
+          <!-- Tablet -->
+          <source
+          media="(min-width: 768px)"
+          srcset="../img/contacts/melon_tab@1x.jpg 1x, ../img/contacts/melon_tab@2x.jpg 2x," 
+          type="image/jpg">
+          <!-- Mobile -->
+          <source
+          media="(max-width: 767px)"
+          srcset="../img/contacts/melon_mob@1x.jpg 1x, ../img/contacts/melon_mob@2x.jpg 2x," 
+          type="image/jpg">
+
+          <img
+          src="../img/contacts/melon_desc@1x.jpg" 
+          alt="melon"
+          width=""
+          loading="lazy"
+          >
+        </picture>
+      </li>
+
       <li class="contacts-item">
-        <img 
-        src="../img/contacts/blueberry_desc@1x.jpg" 
-        alt="blueberry"
-        width=""
-        loading="lazy"
-        ></li>
+          <picture>
+          <!-- Destop -->
+          <source
+          media="(min-width: 1280px)"
+          srcset="../img/contacts/blueberry_desc@1x.jpg 1x, ../img/contacts/blueberry_desc@2x.jpg 2x,"
+          type="image/jpg">
+          <!-- Tablet -->
+          <source
+          media="(min-width: 768px)"
+          srcset="../img/contacts/blueberry_tab@1x.jpg 1x, ../img/contacts/blueberry_tab@2x.jpg 2x," 
+          type="image/jpg">
+
+          <img
+          src="../img/contacts/blueberry_desc@1x.jpg" 
+          alt="blueberry"
+          width=""
+          loading="lazy"
+          >
+        </picture>
+      </li>
     </ul>
 
 
     <div class="contacts-subscribe-desc">
       <p class="contacts-desc-low">Our boxes are packed with delicious, nutritious fruits and vegetables, perfect for anyone looking to eat healthier or support local farmers. Order your box today and start enjoying the best that nature has to offer!</p>
     
-      <form 
-      class="contacts-subscribe"
+      <form class="contacts-subscribe">
+      <input 
+      class="contacts-subscribe-email"
       type = "email"
       name="contacts-email"
       id="contacts_email"
