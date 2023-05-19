@@ -1,5 +1,5 @@
 .hero{
-    background-image: url(../img/imagebanana.png),url(../img/imageberry.png);
+    background-image: url(/img/imagebanana.png),url(/img/imageberry.png);
     background-repeat: no-repeat;
     background-size:182px, 128px;
     background-position: right, left;
