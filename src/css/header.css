@@ -1,9 +1,9 @@
 .header {
-  outline: 3px solid teal;
   background-color: var(--main-color);
 }
-
-.list {
+.header-container {
+  display: flex;
+  align-items: center;
 }
 
 .nav-header {
@@ -24,9 +24,12 @@
 }
 
 .nav-link {
+  padding: 16px 0;
+  display: inline-block;
 }
 
 .logo-header {
+  margin-left: auto;
 }
 .text-logo {
   text-transform: uppercase;
