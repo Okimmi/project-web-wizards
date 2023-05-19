@@ -21,7 +21,9 @@
   --main-font-weight: 400;
 
   --main-color: #ffffff;
+  --secondary-color: #ae1332;
   --main-background-color: #ae1332;
+  --secondary-background-color: #ffffff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
