@@ -8,11 +8,10 @@
   background-size: cover;
   border-radius: 20px;
 }
-@media screen and (min-width: 374px) {
-  .container-img-gif {
-    max-width: 335px;
-    min-height: 476px;
-  }
+
+.container-img-gif {
+  max-width: 335px;
+  min-height: 476px;
 }
 
 @media screen and (min-width: 768px) {
@@ -100,13 +99,12 @@
   letter-spacing: -0.04em;
 
   color: var(--main-color);
-
-  padding-top: 12px;
 }
 .steps-title {
   display: block;
   width: 136px;
-  height: 48px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 
   background-color: var(--secondary-color);
   border-radius: 200px;
