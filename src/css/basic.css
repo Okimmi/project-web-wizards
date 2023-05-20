@@ -8,6 +8,20 @@ body {
   background-color: var(--main-background-color);
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
   padding: 0 20px;
 }
@@ -59,13 +73,20 @@ body {
   text-align: center;
 
   font-weight: 500;
-  font-size: 40px;
-  line-height: 1.1;
+  font-size: 28px;
+  line-height: 1;
   letter-spacing: -0.04em;
   text-transform: uppercase;
 
   color: var(--main-color);
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 768px) {
+  .section-title {
+    font-size: 40px;
+    line-height: 1.1;
+  }
 }
 
 .section-title-text {
