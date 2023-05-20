@@ -13,23 +13,32 @@
 }
 
 .your-order-modal {
-    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     height: 100%;
-    transform: scale(0.9);
+    transform: translate(-50%, -50%) scale(0.9);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
 
+    max-width: 335px;
+
     background-color: var(--main-color);
     border-radius: 20px;
     overflow: auto;
-
     transition: opacity var(--transition), visibility var(--transition), transform var(--transition);
 }
 
-.your-order-modal.active,
 .backdrop.active {
     transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+
+.your-order-modal.active {
+    transform: translate(-50%, -50%) scale(1);
     opacity: 1;
     visibility: visible;
     pointer-events: all;
@@ -39,7 +48,6 @@
     position: relative;
     padding: 20px;
     margin: 0 auto;
-    max-width: 335px;
 }
 
 .order-close-btn {
@@ -234,8 +242,11 @@
 
 @media screen and (min-width: 768px) {
     .order-modal-container {
-        max-width: 704px;
         padding: 40px;
+    }
+
+    .your-order-modal {
+        max-width: 704px;
     }
 
     .order-modal-title {
@@ -319,7 +330,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .order-modal-container {
+    .your-order-modal {
         max-width: 891px;
     }
 
