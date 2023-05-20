@@ -2,9 +2,9 @@
   <div class="container header-container">
     <nav class="list nav-header">
       <ul class="nav-list">
-        <li><a class="link nav-link" href="">How It Works</a></li>
-        <li><a class="link nav-link" href="">Fruits</a></li>
-        <li><a class="link nav-link" href="">Contacts</a></li>
+        <li><a class="link nav-link" href="#How-it-works">How It Works</a></li>
+        <li><a class="link nav-link" href="#Fruits">Fruits</a></li>
+        <li><a class="link nav-link" href="#Contacts">Contacts</a></li>
       </ul>
     </nav>
     <a class="logo-header" href="./index.html">
@@ -17,11 +17,52 @@
       <svg class="icon-cart" width="28" height="28">
         <use href="./img/icons.svg#icon-uil_cart"></use>
       </svg>
-    </button>
-    <button class="mobile-menu">
-      <svg class="mobile-menu-icon" width="24" height="24">
+
+    <!-- mobile menu clouse-->
+
+    <button
+      class="menu-toggle js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20">
         <use href="./img/icons.svg#icon-gg_menu-left"></use>
       </svg>
     </button>
+
+    <!-- mobile menu open  -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      
+      <div class="header-mobile-menu">
+        <a class="logo-header" href="./index.html">
+            <svg class="logo-svg" width="16" height="16">
+              <use href="./img/icons.svg#icon-logo"></use>
+            </svg>
+            <span class="text-logo">fresh harvest box</span>
+          </a>
+          <button class="menu-toggle js-close-menu">
+        <svg
+          class=""
+          width="24"
+          height="24"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+        >
+          <use href="./img/icons.svg#icon-x"></use>
+        </svg>
+      </button>
+      </div>
+      <div class="link-mobile-menu">
+        <ul class="mobile-menu">
+        <li><a href="#How-it-works" class="link">How It Works</a></li>
+        <li><a href="#Fruits" class="link">Fruits</a></li>
+        <li><a href="#Contacts" class="link">Contacts</a></li>
+        <li><svg class="icon-cart-mobile-menu" width="28" height="28">
+        <use href="./img/icons.svg#icon-Vector-2"></use>
+      </svg>
+    </li>
+      </ul>
+      </div>
+    </div>
   </div>
 </header>
