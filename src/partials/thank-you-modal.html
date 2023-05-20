@@ -1,3 +1,53 @@
-<div class="thank-you-modal">
-  <div class="container"></div>
+<div class="thank-you-modal" id="ty">
+  <div class="container thank-you-container">
+    <!-- close btn -->
+    <button type="button" class="close-ty">
+      <svg class="close-svg js-modal-close">
+        <use href="./img/icons.svg#icon-x"></use>
+      </svg>
+    </button>
+    <!-- image -->
+    <picture>
+      <!-- desktop -->
+      <source
+        media="min-width: 1280px"
+        srcset="
+          ./img/ty-image/raspberry-desktop-ty@1x.png 1x,
+          ./img/ty-image/raspberry-desktop-ty@2x.png 2x
+        "
+        type="image/png"
+      />
+      <!-- tablet -->
+      <source
+        media="min-width: 768px"
+        srcset="
+          ./img/ty-image/raspberry-tablet-ty@1x.png 1x,
+          ./img/ty-image/raspberry-tablet-ty@2x.png 2x
+        "
+        type="image/png"
+      />
+      <!-- mob -->
+      <source
+        media="max-width: 767px"
+        srcset="
+          ./img/ty-image/raspberry-mob-ty@1x.png 1x,
+          ./img/ty-image/raspberry-mob-ty@2x.png 2x
+        "
+        type="image/png"
+      />
+      <img
+        src="./img/ty-image/raspberry-tablet-ty@1x.png"
+        alt="raspberry"
+        width=""
+      />
+    </picture>
+    <!-- text -->
+    <h3 class="heading-ty">THANK YOU</h3>
+    <p class="paragraph-txt-ty">
+      Thank you for your order! Our team is preparing your box with fresh,
+      delicious fruits and vegetables, and we'll deliver it straight to your
+      doorstep. We appreciate your business and look forward to providing you
+      with the best possible experience!
+    </p>
+  </div>
 </div>
