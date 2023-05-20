@@ -21,34 +21,75 @@
 
     
     <script type="module" crossorigin src="/project-web-wizards/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/project-web-wizards/assets/index-d052f6cb.css">
+    <link rel="stylesheet" href="/project-web-wizards/assets/index-f26c143e.css">
   </head>
   <body>
     <header class="header">
   <div class="container header-container">
     <nav class="list nav-header">
       <ul class="nav-list">
-        <li><a class="link nav-link" href="">How It Works</a></li>
-        <li><a class="link nav-link" href="">Fruits</a></li>
-        <li><a class="link nav-link" href="">Contacts</a></li>
+        <li><a class="link nav-link" href="#How-it-works">How It Works</a></li>
+        <li><a class="link nav-link" href="#Fruits">Fruits</a></li>
+        <li><a class="link nav-link" href="#Contacts">Contacts</a></li>
       </ul>
     </nav>
     <a class="logo-header" href="./index.html">
       <svg class="logo-svg" width="16" height="16">
-        <use href="/project-web-wizards/assets/icons-6342850f.svg#icon-logo"></use>
+        <use href="/project-web-wizards/assets/icons-edde585a.svg#icon-logo"></use>
       </svg>
       <span class="text-logo">fresh harvest box</span>
     </a>
     <button class="heder-btn" type="button">
       <svg class="icon-cart" width="28" height="28">
-        <use href="/project-web-wizards/assets/icons-6342850f.svg#icon-uil_cart"></use>
+        <use href="/project-web-wizards/assets/icons-edde585a.svg#icon-uil_cart"></use>
+      </svg>
+
+    <!-- mobile menu clouse-->
+
+    <button
+      class="menu-toggle js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20">
+        <use href="/project-web-wizards/assets/icons-edde585a.svg#icon-gg_menu-left"></use>
       </svg>
     </button>
-    <button class="mobile-menu">
-      <svg class="mobile-menu-icon" width="24" height="24">
-        <use href="/project-web-wizards/assets/icons-6342850f.svg#icon-gg_menu-left"></use>
+
+    <!-- mobile menu open  -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      
+      <div class="header-mobile-menu">
+        <a class="logo-header" href="./index.html">
+            <svg class="logo-svg" width="16" height="16">
+              <use href="/project-web-wizards/assets/icons-edde585a.svg#icon-logo"></use>
+            </svg>
+            <span class="text-logo">fresh harvest box</span>
+          </a>
+          <button class="menu-toggle js-close-menu">
+        <svg
+          class=""
+          width="24"
+          height="24"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+        >
+          <use href="/project-web-wizards/assets/icons-edde585a.svg#icon-x"></use>
+        </svg>
+      </button>
+      </div>
+      <div class="link-mobile-menu">
+        <ul class="mobile-menu">
+        <li><a href="#How-it-works" class="link">How It Works</a></li>
+        <li><a href="#Fruits" class="link">Fruits</a></li>
+        <li><a href="#Contacts" class="link">Contacts</a></li>
+        <li><svg class="icon-cart-mobile-menu" width="28" height="28">
+        <use href="/project-web-wizards/assets/icons-edde585a.svg#icon-Vector-2"></use>
       </svg>
-    </button>
+    </li>
+      </ul>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -361,7 +402,7 @@
 
     <button class="order-button modal-order" type="button" data-modal-open>
       <svg class="order-icon" width="14" height="14">
-        <use href="/project-web-wizards/assets/icons-6342850f.svg#icon-arrow"></use>
+        <use href="/project-web-wizards/assets/icons-edde585a.svg#icon-arrow"></use>
       </svg>ORDER</button>
 
   </div>
@@ -451,7 +492,7 @@
                 loading="lazy"
           /></div>
       <a href="./index.html" class="footer-logo-link"><svg class="footer-logo-icon" width="16" height="16">
-        <use href="/project-web-wizards/assets/icons-6342850f.svg#icon-logo"></use>
+        <use href="/project-web-wizards/assets/icons-edde585a.svg#icon-logo"></use>
       </svg><span class="logo-text">Fresh harvest box</span></a>
     </div>
     <div class="footer-menu">
@@ -468,7 +509,7 @@
             rel="noopener noreferer"
             target="_blank">
             <svg class="social-net-icon" width="24" height="24">
-              <use href="/project-web-wizards/assets/icons-6342850f.svg#icon-facebook"></use>
+              <use href="/project-web-wizards/assets/icons-edde585a.svg#icon-facebook"></use>
             </svg></a>
           </li>
           <li class="social-net-item-link">
@@ -476,7 +517,7 @@
             rel="noopener noreferer"
             target="_blank">
               <svg class="social-net-icon" width="24" height="24">
-              <use href="/project-web-wizards/assets/icons-6342850f.svg#icon-instagram"></use>
+              <use href="/project-web-wizards/assets/icons-edde585a.svg#icon-instagram"></use>
             </svg></a>
           </li>
           <li class="social-net-item-link">
@@ -484,7 +525,7 @@
             rel="noopener noreferer"
             target="_blank">
               <svg class="social-net-icon" width="24" height="24">
-              <use href="/project-web-wizards/assets/icons-6342850f.svg#icon-youtube"></use>
+              <use href="/project-web-wizards/assets/icons-edde585a.svg#icon-youtube"></use>
             </svg></a>
           </li>
         </ul>
@@ -511,7 +552,7 @@
   <div class="container">
     <button type="button" class="order-close-btn">
       <svg class="order-close-btn-icon" width="24" height="24">
-        <use href="/project-web-wizards/assets/icons-6342850f.svg#order-close-modal-btn"></use>
+        <use href="/project-web-wizards/assets/icons-edde585a.svg#order-close-modal-btn"></use>
       </svg>
     </button>
 
@@ -672,7 +713,7 @@
     <!-- close btn -->
     <button type="button" class="close-ty">
       <svg class="close-svg js-modal-close">
-        <use href="/project-web-wizards/assets/icons-6342850f.svg#icon-x"></use>
+        <use href="/project-web-wizards/assets/icons-edde585a.svg#icon-x"></use>
       </svg>
     </button>
     <!-- image -->
@@ -714,5 +755,14 @@
 
 
     
+
+    <!-- scripts for modile menu -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
