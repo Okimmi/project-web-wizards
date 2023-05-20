@@ -35,18 +35,18 @@
     </nav>
     <a class="logo-header" href="./index.html">
       <svg class="logo-svg" width="16" height="16">
-        <use href="/project-web-wizards/assets/icons-b91fb616.svg#icon-logo"></use>
+        <use href="/project-web-wizards/assets/icons-6342850f.svg#icon-logo"></use>
       </svg>
       <span class="text-logo">fresh harvest box</span>
     </a>
     <button class="heder-btn" type="button">
       <svg class="icon-cart" width="28" height="28">
-        <use href="/project-web-wizards/assets/icons-b91fb616.svg#icon-uil_cart"></use>
+        <use href="/project-web-wizards/assets/icons-6342850f.svg#icon-uil_cart"></use>
       </svg>
     </button>
     <button class="mobile-menu">
       <svg class="mobile-menu-icon" width="24" height="24">
-        <use href="/project-web-wizards/assets/icons-b91fb616.svg#icon-gg_menu-left"></use>
+        <use href="/project-web-wizards/assets/icons-6342850f.svg#icon-gg_menu-left"></use>
       </svg>
     </button>
   </div>
@@ -242,7 +242,7 @@
   <div class="container">
     <button type="button" class="order-close-btn">
       <svg class="order-close-btn-icon" width="24" height="24">
-        <use href="/project-web-wizards/assets/icons-b91fb616.svg#order-close-modal-btn"></use>
+        <use href="/project-web-wizards/assets/icons-6342850f.svg#order-close-modal-btn"></use>
       </svg>
     </button>
 
@@ -398,8 +398,49 @@
   </div>
 </div>
 
-    <div class="thank-you-modal">
-  <div class="container"></div>
+    <div class="thank-you-modal" id="ty">
+  <div class="container thank-you-container">
+    <!-- close btn -->
+    <button type="button" class="close-ty">
+      <svg class="close-svg js-modal-close">
+        <use href="/project-web-wizards/assets/icons-6342850f.svg#icon-x"></use>
+      </svg>
+    </button>
+    <!-- image -->
+    <picture>
+      <!-- desktop -->
+      <source
+        media="min-width: 1280px"
+        srcset="/project-web-wizards/assets/raspberry-desktop-ty@1x-cb0e2a8a.png 1x, /project-web-wizards/assets/raspberry-desktop-ty@2x-c326b779.png 2x"
+        type="image/png"
+      />
+      <!-- tablet -->
+      <source
+        media="min-width: 768px"
+        srcset="/project-web-wizards/assets/raspberry-desktop-ty@1x-cb0e2a8a.png 1x, /project-web-wizards/assets/raspberry-desktop-ty@2x-c326b779.png 2x"
+        type="image/png"
+      />
+      <!-- mob -->
+      <source
+        media="max-width: 767px"
+        srcset="/project-web-wizards/assets/raspberry-mob-ty@1x-f8660b4c.png 1x, /project-web-wizards/assets/raspberry-mob-ty@2x-081fa7a7.png 2x"
+        type="image/png"
+      />
+      <img
+        src="/project-web-wizards/assets/raspberry-desktop-ty@1x-cb0e2a8a.png"
+        alt="raspberry"
+        width=""
+      />
+    </picture>
+    <!-- text -->
+    <h3 class="heading-ty">THANK YOU</h3>
+    <p class="paragraph-txt-ty">
+      Thank you for your order! Our team is preparing your box with fresh,
+      delicious fruits and vegetables, and we'll deliver it straight to your
+      doorstep. We appreciate your business and look forward to providing you
+      with the best possible experience!
+    </p>
+  </div>
 </div>
 
 
