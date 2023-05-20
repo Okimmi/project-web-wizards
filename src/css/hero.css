@@ -26,8 +26,41 @@
     color: #FFFFFF;
     text-align: center;
 }
+.hero-card-watermeloun{
+display: block;
+    background: url(../img/Ovalberry.png);
+    background-repeat: no-repeat;
+    background-size: 239px,38px;
+    background-position: center;
+    width: 249px;
+    height: 387px;
+    background-color: #A4CB66;
+    border-radius: 500px;
+}
+.hero-card-strawberry{display: block;
+    background: url(../img/Ovalberry.png);
+    background-repeat: no-repeat;
+    background-size: 239px, 38px;
+    background-position: center;
+    width: 249px;
+    height: 387px;
+    background-color: #F5CE13;
+    border-radius: 500px;
 
+}
+.title-card{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14/12);
+    color: #FFFFFF;
+}
+.text-hero-card{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(14/12);
+    color: #FFFFFF;
 
+}
 
 
 
