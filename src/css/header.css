@@ -23,9 +23,14 @@
 
 .nav-list {
   display: flex;
-  gap: 20px;
+  gap: 16px;
 }
 
+@media screen and (min-width: 1280px) {
+  .nav-list {
+    gap: 20px;
+  }
+}
 .link {
 }
 
