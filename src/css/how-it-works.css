@@ -1,0 +1,132 @@
+.container-img-gif {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: url(/img/how-it-works/image-how-it-works.gif);
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.container-img-gif {
+  max-width: 335px;
+  min-height: 476px;
+}
+
+@media screen and (min-width: 768px) {
+  .container-img-gif {
+    max-width: 704px;
+    min-height: 476px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container-img-gif {
+    max-width: 860px;
+    min-height: 476px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section-title {
+    font-size: 28px;
+    line-height: 1;
+  }
+  .steps-wrapper {
+    height: 112px;
+    padding: 20px;
+  }
+  .section-title-text.steps {
+    max-width: 145px;
+  }
+  .steps {
+    margin-bottom: 44px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-title {
+    max-width: 624px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .section-title-text {
+    max-width: 509px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .steps-wrapper {
+    width: 389px;
+    height: 128px;
+    padding: 40px 20px;
+  }
+  .section-title-text.steps {
+    max-width: 199px;
+  }
+  .steps {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .steps {
+    max-width: 389px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .steps {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 24px;
+  }
+}
+.section-title-text {
+  margin-bottom: 44px;
+}
+.section-title-text.steps {
+  text-align: left;
+
+  color: #000000;
+}
+.title-wrapper {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+
+  letter-spacing: -0.04em;
+
+  color: var(--main-color);
+}
+.steps-title {
+  display: block;
+  width: 136px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  background-color: var(--secondary-color);
+  border-radius: 200px;
+}
+.steps-title.second {
+  background-color: #a1c864;
+}
+.steps-title.third {
+  background-color: #f5ce13;
+}
+
+.steps-wrapper {
+  background-color: var(--main-color);
+  border-radius: 20px;
+
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 1279px) {
+  .steps-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
