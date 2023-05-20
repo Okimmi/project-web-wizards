@@ -3,8 +3,18 @@
     background-repeat: no-repeat;
     background-size:182px, 128px;
     background-position: right, left;
-    rotate: -20%;
-}
+    rotate: -20%;}
+
+  @media
+  (-webkit-min-device-pixel-ratio:2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+      .hero {
+    background-image: url(/img/imagebanan@2x.png), url(/img/imageberry@2x.png);
+      }
+  }
+
+
 .hero-btn{
     width: 114px;
     height: 114px;
@@ -28,7 +38,7 @@
 }
 .hero-card-watermeloun{
 display: block;
-    background: url(../img/Ovalberry.png);
+    background: url(/img/ovalberry.png);
     background-repeat: no-repeat;
     background-size: 239px,38px;
     background-position: center;
@@ -37,8 +47,18 @@ display: block;
     background-color: #A4CB66;
     border-radius: 500px;
 }
+
+@media (-webkit-min-device-pixel-ratio:2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.hero-card-watermeloun {
+        background-image: url(/img/ovalberry@2x.png);
+}
+}
+
+
 .hero-card-strawberry{display: block;
-    background: url(../img/Ovalberry.png);
+    background: url(/img/ovalberry.png);
     background-repeat: no-repeat;
     background-size: 239px, 38px;
     background-position: center;
@@ -48,6 +68,15 @@ display: block;
     border-radius: 500px;
 
 }
+
+@media (-webkit-min-device-pixel-ratio:2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.hero-card-strawberry {
+        background-image: url(/img/ovalberry@2x.png);
+}
+}
+    
 .title-card{
     font-weight: 400;
     font-size: 12px;
