@@ -1,197 +1,195 @@
 <div class="backdrop js-overlay-modal active">
   <div class="your-order-modal modal active" data-modal="1">
-    <div class="order-modal-background">
-      <div class="order-modal-container">
-        <button type="button" class="order-close-btn js-modal-close">
-          <svg class="order-close-btn-icon" width="24" height="24">
-            <use href="./img/icons.svg#order-close-modal-btn"></use>
-          </svg>
-        </button>
-    
-        <h2 class="order-modal-title">Your Order</h2>
-    
-        <form class="order-modal-form">
-          <ul class="order-modal-list">
-            <li class="order-modal-item strawberry-basket-item">
-              <label class="order-modal-form-label">
-                <input type="checkbox" name="order" value="strawberry-basket" class="modal-form-check">
-                <div class="order-modal-content-wrapper strawberry-basket-wrapper">
-                  <h3 class="order-modal-item-title">Strawberry Basket</h3>
-                  <p class="order-modal-item-text">Plant</p>
-                </div>
-    
-                <picture>
-                  <!-- Descktop screen -->
-                  <source 
-                  media="(min-width: 1280px)"
-                  srcset="
-                  ./img/your-order-modal/img-1_desc@1x.png 1x,
-                  ./img/your-order-modal/img-1_desc@2x.png 2x
-                  " 
-                  type="image/png"
-                  >
-    
-                  <!-- Tablet screen -->
-                  <source 
-                  media="(min-width: 768px)"
-                  srcset="
-                  ./img/your-order-modal/img-1_tab@1x.png 1x,
-                  ./img/your-order-modal/img-1_tab@2x.png 2x
-                  " 
-                  type="image/png"
-                  >
-    
-                  <!-- Mobile screen -->
-                  <source 
-                  media="(max-width: 767px)"
-                  srcset="
-                  ./img/your-order-modal/img-1_mob@1x.png 1x,
-                  ./img/your-order-modal/img-1_mob@2x.png 2x
-                  " 
-                  type="image/png"
-                  >
-    
-                  <img 
-                  class="order-card-img"
-                  src="./img/your-order-modal/img-1_desc@1x.png" 
-                  alt="strawberry-basket"
-                  loading="lazy"
-                  >
-                </picture>
-              </label>
-            </li>
-            <li class="order-modal-item apple-basket-item">
-              <label class="order-modal-form-label">
-                <input type="checkbox" name="order" value="apple-basket" class="modal-form-check">
-                <div class="order-modal-content-wrapper apple-basket-wrapper">
-                  <h3 class="order-modal-item-title">Apple Basket</h3>
-                  <p class="order-modal-item-text">Plant</p>
-                </div>
-    
-                <picture>
-                  <!-- Descktop screen -->
-                  <source 
-                  media="(min-width: 1280px)"
-                  srcset="
-                  ./img/your-order-modal/img-2_desc@1x.png 1x,
-                  ./img/your-order-modal/img-2_desc@2x.png 2x
-                  " 
-                  type="image/png"
-                  >
-    
-                  <!-- Tablet screen -->
-                  <source 
-                  media="(min-width: 768px)"
-                  srcset="
-                  ./img/your-order-modal/img-2_tab@1x.png 1x,
-                  ./img/your-order-modal/img-2_tab@2x.png 2x
-                  " 
-                  type="image/png"
-                  >
-    
-                  <!-- Mobile screen -->
-                  <source 
-                  media="(max-width: 767px)"
-                  srcset="
-                  ./img/your-order-modal/img-2_mob@1x.png 1x,
-                  ./img/your-order-modal/img-2_mob@2x.png 2x
-                  " 
-                  type="image/png"
-                  >
-    
-                  <img 
-                  class="order-card-img"
-                  src="./img/your-order-modal/img-2_desc@1x.png" 
-                  alt="apple-basket"
-                  loading="lazy"
-                  >
-                </picture>
-              </label>
-            </li>
-            <li class="order-modal-item fruits-basket-item">
-              <label class="order-modal-form-label">
-                <input type="checkbox" name="order" value="fruits-basket" class="modal-form-check">
-                <div class="order-modal-content-wrapper fruits-basket-wrapper">
-                  <h3 class="order-modal-item-title">Fruits Basket</h3>
-                  <p class="order-modal-item-text">Plant</p>
-                </div>
-    
-                <picture>
-                  <!-- Descktop screen -->
-                  <source 
-                  media="(min-width: 1280px)"
-                  srcset="
-                  ./img/your-order-modal/img-3_desc@1x.png 1x,
-                  ./img/your-order-modal/img-3_desc@2x.png 2x
-                  " 
-                  type="image/png"
-                  >
-    
-                  <!-- Tablet screen -->
-                  <source 
-                  media="(min-width: 768px)"
-                  srcset="
-                  ./img/your-order-modal/img-3_tab@1x.png 1x,
-                  ./img/your-order-modal/img-3_tab@2x.png 2x
-                  " 
-                  type="image/png"
-                  >
-    
-                  <!-- Mobile screen -->
-                  <source 
-                  media="(max-width: 767px)"
-                  srcset="
-                  ./img/your-order-modal/img-3_mob@1x.png 1x,
-                  ./img/your-order-modal/img-3_mob@2x.png 2x
-                  " 
-                  type="image/png"
-                  >
-    
-                  <img 
-                  class="order-card-img"
-                  src="./img/your-order-modal/img-3_desc@1x.png" 
-                  alt="apple-basket"
-                  loading="lazy"
-                  >
-                </picture>
-              </label>
-            </li>
-          </ul>
-    
-          <input 
-          type="text"
-          class="order-modal-form-input"
-          name="user_name"
-          pattern="[a-zA-Zа-яА-Я]+"
-          minlength="2"
-          placeholder="Enter full name..."
-          required>
-    
-          <input 
-          type="email"
-          class="order-modal-form-input"
-          name="user_email"
-          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-          placeholder="Enter email..."
-          required>
-    
-          <input 
-          type="text"
-          class="order-modal-form-input"
-          name="user_card"
-          pattern="[0-9]+"
-          maxlength="16"
-          minlength="16"
-          placeholder="Enter card.."
-          required
-          >
-    
-          <textarea name="user_message" class="order-modal-form-message" placeholder="Enter comments..."></textarea>
-          
-          <button type="submit" class="order-modal-form-sumbit js-modal-close">Submit</button>
-        </form>
-    
-      </div>
+    <div class="order-modal-container">
+      <button type="button" class="order-close-btn js-modal-close">
+        <svg class="order-close-btn-icon" width="24" height="24">
+          <use href="./img/icons.svg#order-close-modal-btn"></use>
+        </svg>
+      </button>
+  
+      <h2 class="order-modal-title">Your Order</h2>
+  
+      <form class="order-modal-form">
+        <ul class="order-modal-list">
+          <li class="order-modal-item strawberry-basket-item">
+            <label class="order-modal-form-label">
+              <input type="checkbox" name="order" value="strawberry-basket" class="modal-form-check">
+              <div class="order-modal-content-wrapper strawberry-basket-wrapper">
+                <h3 class="order-modal-item-title">Strawberry Basket</h3>
+                <p class="order-modal-item-text">Plant</p>
+              </div>
+  
+              <picture>
+                <!-- Descktop screen -->
+                <source 
+                media="(min-width: 1280px)"
+                srcset="
+                ./img/your-order-modal/img-1_desc@1x.png 1x,
+                ./img/your-order-modal/img-1_desc@2x.png 2x
+                " 
+                type="image/png"
+                >
+  
+                <!-- Tablet screen -->
+                <source 
+                media="(min-width: 768px)"
+                srcset="
+                ./img/your-order-modal/img-1_tab@1x.png 1x,
+                ./img/your-order-modal/img-1_tab@2x.png 2x
+                " 
+                type="image/png"
+                >
+  
+                <!-- Mobile screen -->
+                <source 
+                media="(max-width: 767px)"
+                srcset="
+                ./img/your-order-modal/img-1_mob@1x.png 1x,
+                ./img/your-order-modal/img-1_mob@2x.png 2x
+                " 
+                type="image/png"
+                >
+  
+                <img 
+                class="order-card-img"
+                src="./img/your-order-modal/img-1_desc@1x.png" 
+                alt="strawberry-basket"
+                loading="lazy"
+                >
+              </picture>
+            </label>
+          </li>
+          <li class="order-modal-item apple-basket-item">
+            <label class="order-modal-form-label">
+              <input type="checkbox" name="order" value="apple-basket" class="modal-form-check">
+              <div class="order-modal-content-wrapper apple-basket-wrapper">
+                <h3 class="order-modal-item-title">Apple Basket</h3>
+                <p class="order-modal-item-text">Plant</p>
+              </div>
+  
+              <picture>
+                <!-- Descktop screen -->
+                <source 
+                media="(min-width: 1280px)"
+                srcset="
+                ./img/your-order-modal/img-2_desc@1x.png 1x,
+                ./img/your-order-modal/img-2_desc@2x.png 2x
+                " 
+                type="image/png"
+                >
+  
+                <!-- Tablet screen -->
+                <source 
+                media="(min-width: 768px)"
+                srcset="
+                ./img/your-order-modal/img-2_tab@1x.png 1x,
+                ./img/your-order-modal/img-2_tab@2x.png 2x
+                " 
+                type="image/png"
+                >
+  
+                <!-- Mobile screen -->
+                <source 
+                media="(max-width: 767px)"
+                srcset="
+                ./img/your-order-modal/img-2_mob@1x.png 1x,
+                ./img/your-order-modal/img-2_mob@2x.png 2x
+                " 
+                type="image/png"
+                >
+  
+                <img 
+                class="order-card-img"
+                src="./img/your-order-modal/img-2_desc@1x.png" 
+                alt="apple-basket"
+                loading="lazy"
+                >
+              </picture>
+            </label>
+          </li>
+          <li class="order-modal-item fruits-basket-item">
+            <label class="order-modal-form-label">
+              <input type="checkbox" name="order" value="fruits-basket" class="modal-form-check">
+              <div class="order-modal-content-wrapper fruits-basket-wrapper">
+                <h3 class="order-modal-item-title">Fruits Basket</h3>
+                <p class="order-modal-item-text">Plant</p>
+              </div>
+  
+              <picture>
+                <!-- Descktop screen -->
+                <source 
+                media="(min-width: 1280px)"
+                srcset="
+                ./img/your-order-modal/img-3_desc@1x.png 1x,
+                ./img/your-order-modal/img-3_desc@2x.png 2x
+                " 
+                type="image/png"
+                >
+  
+                <!-- Tablet screen -->
+                <source 
+                media="(min-width: 768px)"
+                srcset="
+                ./img/your-order-modal/img-3_tab@1x.png 1x,
+                ./img/your-order-modal/img-3_tab@2x.png 2x
+                " 
+                type="image/png"
+                >
+  
+                <!-- Mobile screen -->
+                <source 
+                media="(max-width: 767px)"
+                srcset="
+                ./img/your-order-modal/img-3_mob@1x.png 1x,
+                ./img/your-order-modal/img-3_mob@2x.png 2x
+                " 
+                type="image/png"
+                >
+  
+                <img 
+                class="order-card-img"
+                src="./img/your-order-modal/img-3_desc@1x.png" 
+                alt="apple-basket"
+                loading="lazy"
+                >
+              </picture>
+            </label>
+          </li>
+        </ul>
+  
+        <input 
+        type="text"
+        class="order-modal-form-input"
+        name="user_name"
+        pattern="[a-zA-Zа-яА-Я]+"
+        minlength="2"
+        placeholder="Enter full name..."
+        required>
+  
+        <input 
+        type="email"
+        class="order-modal-form-input"
+        name="user_email"
+        pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+        placeholder="Enter email..."
+        required>
+  
+        <input 
+        type="text"
+        class="order-modal-form-input"
+        name="user_card"
+        pattern="[0-9]+"
+        maxlength="16"
+        minlength="16"
+        placeholder="Enter card.."
+        required
+        >
+  
+        <textarea name="user_message" class="order-modal-form-message" placeholder="Enter comments..."></textarea>
+        
+        <button type="submit" class="order-modal-form-sumbit js-modal-close">Submit</button>
+      </form>
+  
     </div>
   </div>
 </div>
