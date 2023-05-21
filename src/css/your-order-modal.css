@@ -16,16 +16,23 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    height: 903px;
+    height: 100%;
     transform: translate(-50%, -50%) scale(0.9);
     opacity: 0;
     visibility: hidden;
 
     width: 100%;
-
+    overflow: hidden;
     background-color: var(--main-color);
     border-radius: 20px;
     transition: opacity var(--transition), visibility var(--transition), transform var(--transition);
+}
+
+@media screen and (max-height: 903px) {
+    .your-order-modal {
+        height: 100%;
+        overflow: auto;
+    }
 }
 
 .backdrop.active {
@@ -333,7 +340,7 @@
         height: 48px;
     }
 
-    .order-modal-background {
+    .your-order-modal {
         background-image: url(/img/your-order-modal/background-girl_tab@1x.png);
         background-repeat: no-repeat;
         background-position: bottom right;
@@ -342,9 +349,16 @@
     @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-        .order-modal-background {
+        .your-order-modal {
             background-image: url(/img/your-order-modal/background-girl_tab@2x.png);
             background-size: auto 467px;
+        }
+    }
+
+    @media screen and (max-height: 853px) {
+        .your-order-modal {
+            height: 100%;
+            overflow: auto;
         }
     }
 }
@@ -369,7 +383,7 @@
         width: 257px;
     }
 
-    .order-modal-background {
+    .your-order-modal {
         background-image: url(/img/your-order-modal/background-girl_desc@1x.png);
         background-repeat: no-repeat;
         background-position: bottom right;
@@ -378,8 +392,15 @@
     @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-        .order-modal-background {
+        .your-order-modal {
             background-image: url(/img/your-order-modal/background-girl_desc@2x.png);
+        }
+    }
+
+    @media screen and (max-height: 911px) {
+        .your-order-modal {
+            height: 100%;
+            overflow: auto;
         }
     }
 
