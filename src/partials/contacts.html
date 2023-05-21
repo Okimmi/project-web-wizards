@@ -1,6 +1,7 @@
-<section class="contacts section">
-  <div class="container">
-    <h2 class="">Fresh Harvest Box has got you covered</h2>
+<section class="section-contacts section" id="сontacts">
+  <div class="container-contacts container">
+    <h2 class="section-title contacts-title">Fresh Harvest Box has got you covered</h2>
+    <div class="contacts-img">
     <ul class="contacts-list list">
       <li class="contacts-item">
         <picture>
@@ -21,15 +22,15 @@
           type="image/jpg">
 
           <img
+          class="contacts-item-img contacts-item-1"
           src="./img/contacts/melon_desc@1x.jpg" 
           alt="melon"
-          width=""
           loading="lazy"
           >
         </picture>
       </li>
 
-      <li class="contacts-item">
+      <li class="contacts-item hidden-contacts-item">
           <picture>
           <!-- Destop -->
           <source
@@ -43,18 +44,17 @@
           type="image/jpg">
 
           <img
+          class="contacts-item-img contacts-item-2"
           src="./img/contacts/blueberry_desc@1x.jpg" 
           alt="blueberry"
-          width=""
           loading="lazy"
           >
         </picture>
       </li>
-    </ul>
-
+    </div>
 
     <div class="contacts-subscribe-desc">
-      <p class="contacts-desc-low">Our boxes are packed with delicious, nutritious fruits and vegetables, perfect for anyone looking to eat healthier or support local farmers. Order your box today and start enjoying the best that nature has to offer!</p>
+      <p class="section-title-text contacts-desc-text">Our boxes are packed with delicious, nutritious fruits and vegetables, perfect for anyone looking to eat healthier or support local farmers. Order your box today and start enjoying the best that nature has to offer!</p>
     
       <form class="contacts-subscribe">
       <input 
@@ -62,8 +62,9 @@
       type = "email"
       name="contacts-email"
       id="contacts_email"
-      pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+      pattern = "[a-z0-9]+@[a-z0-9.-]+.[a-z]"
       placeholder="Enter email..."
+      required
       >
       <button class="contacts-btn" type="submit">Send</button>
       </form>
