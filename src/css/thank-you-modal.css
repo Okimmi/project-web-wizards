@@ -42,7 +42,7 @@
     flex-direction: column;
     align-items: center;
 
-    background-color: var(--main-background-color);
+    background-color: #E03F5E;
     color: var(--main-color);
     padding: 68px 20px 80px 20px;
     border-radius: 20px;
