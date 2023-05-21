@@ -88,22 +88,22 @@
 /* For Mob sizes img */
 .contacts-item-1{
     max-width: 335px;
-    min-height: 480px;
+    min-height: 476px;
 }
 /* For Tablet sizes img */
-@media only screen and (min-width: 768) {
+@media only screen and (min-width: 768px) {
     .contacts-item-1 {
       max-width: 344px;
-      min-height: 476px;
+      min-height: 480px;
     }
     .contacts-item-2 {
         max-width: 344px;
-        min-height: 476px;
-      }
+        min-height: 480px;
+    }
   }
 /* For Desktop sizes img */
 @media only screen and (min-width: 1280px) {
-  .contacts-item-1 {
+    .contacts-item-1 {
     max-width: 792px;
     min-height: 502px;
     }
@@ -112,7 +112,7 @@
         min-height: 502px;  
     }
 }
-/* Hidden second img < 768 px*/
+/* Hidden second img < 768 px */
 @media only screen and (max-width: 767px) {
     .hidden-contacts-item{
     display: none;
@@ -121,11 +121,14 @@
 
 
 
+
+ /* Hidden section description < 768 px */
 @media only screen and (max-width: 767px) {
   .contacts-subscribe-desc {
     display: none;
   }
-} 
+}
+/* For Tablet & Desktop */
 @media only screen and (min-width: 768px) {
 .contacts-subscribe-desc {
     display: flex;
@@ -133,19 +136,20 @@
     margin-right: auto;
     flex-direction: column;
     position: relative;
+    align-items: center;
+    justify-content: center;
 
     padding: 0px;
     max-width: 492px;
-    align-items: center;
-    justify-content: center;
 }
 } 
+
+
 
 .contacts-desc-text {
     margin-bottom: 80px;
     font-size: 14px;
 }
-
 
 
 
@@ -172,6 +176,7 @@
 .contacts-subscribe-email::placeholder {
     color: var(--main-color);
 }
+
 
 
 .contacts-btn {
