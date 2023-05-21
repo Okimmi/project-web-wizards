@@ -4,6 +4,10 @@
     background-color: var(--secondary-background-color);
 }
 
+.footer-container{
+
+}
+
 @media only screen and (min-width: 768px) {
   .footer-container{
   display: flex;
@@ -47,13 +51,13 @@ color: var(--main-background-color);
     height: 18px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 44px;
 }
 
 .footer-menu-list{
     display: flex;
     gap: 20px;
     justify-content: center;
-    margin-bottom: 44px;
 }
 
 .footer-menu-item{
