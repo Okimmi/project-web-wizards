@@ -1,5 +1,51 @@
 /* all */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(46, 47, 66, 0.4);
 
+    transition: opacity var(--transition), visibility var(--transition);
+}
+.thank-you-modal {
+    position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 903px;
+        transform: translate(-50%, -50%) scale(0.9);
+        opacity: 0;
+        visibility: hidden;
+    
+        width: 100%;
+        overflow: hidden;
+        background-color: var(--main-background-color);
+        border-radius: 20px;
+        transition: opacity var(--transition), visibility var(--transition), transform var(--transition);
+}
+.backdrop.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.your-order-modal.active {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    visibility: visible;
+}
+
+.thank-you-container{
+    background-color: var(--main-background-color);
+    color: var(--main-color);
+}
+
+.modal{
+
+}
 /* mobile */
 @media screen and (max-width: 676px){
     .thank-you-container {
@@ -23,7 +69,6 @@
 }
 
 
-.thank-you-modal {}
 
 .modal {}
 
