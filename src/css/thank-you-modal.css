@@ -6,8 +6,8 @@
     width: 100%;
     height: 100%;
     z-index: 100;
-    opacity: 0;
-    visibility: hidden;
+    /* opacity: 0;
+    visibility: hidden; */
     background-color: rgba(46, 47, 66, 0.4);
 
     transition: opacity var(--transition), visibility var(--transition);
@@ -23,7 +23,6 @@
     
         width: 100%;
         overflow: hidden;
-        background-color: var(--main-background-color);
         border-radius: 20px;
         transition: opacity var(--transition), visibility var(--transition), transform var(--transition);
 }
@@ -39,8 +38,39 @@
 }
 
 .thank-you-container{
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 600px;
+    width: 100%;
+
     background-color: var(--main-background-color);
     color: var(--main-color);
+    padding: 68px 20px 80px 20px;
+
+}
+   .close-ty {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    align-content: center;
+    right: 20px;
+    top: 20px;
+
+    line-height: 0;
+   }
+    .close-svg {
+        width: 100%;
+        height: 100%;
+        stroke: var(--main-color);
+
+    }
+.img-ty {
+    width: 100%;
 }
 
 .modal{
@@ -50,38 +80,55 @@
 @media screen and (max-width: 676px){
     .thank-you-container {
        
+        max-width: 335px;
+        width: 100%;
 
+        padding: 40px 20px;
     }
-}
+
+    .close-ty {
+        width: 24px;
+        height: 24px;
+        padding: 6px;
+
+        
+    }
+        .picture-ty {
+            width: 207px;
+            margin-bottom: 28px;
+        }
+        
+    }
 /* tablet */
 @media screen and (min-width: 768px){
     .thank-you-container {
-
+        padding: 68px 104px 80px 104px;
     }
-    /* max-width: 600px */
+        .picture-ty {
+            width: 278px;
+            margin-bottom: 28px;
+        }
+     .heading-ty {
+        font-size: 40px;
+        line-height: 1.1;
+            }
+
 }
 /* desktop */
 @media screen and (min-width: 1280px){
-    .thank-you-container {
-
-    }
+    
+        .picture-ty {
+            margin-bottom: 28px;
+        }
     
 }
 
 
 
-.modal {}
-
-.container {}
 
 
 
-.close-ty {}
 
-.close-svg {}
 
-.js-modal-close {}
-
-.heading-ty {}
 
 .paragraph-txt-ty {}
