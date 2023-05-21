@@ -12,16 +12,6 @@
         overflow: hidden;
         transition: opacity var(--transition), visibility var(--transition), transform var(--transition);
 }
-.backdrop .active {
-    opacity: 1;
-    visibility: visible;
-}
-
-.your-order-modal .active {
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
-    visibility: visible;
-}
 
 .thank-you-container{
     position: relative;
