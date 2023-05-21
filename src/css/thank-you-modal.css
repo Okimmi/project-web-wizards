@@ -27,12 +27,12 @@
         border-radius: 20px;
         transition: opacity var(--transition), visibility var(--transition), transform var(--transition);
 }
-.backdrop.active {
+.backdrop .active {
     opacity: 1;
     visibility: visible;
 }
 
-.your-order-modal.active {
+.your-order-modal .active {
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
     visibility: visible;
