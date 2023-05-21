@@ -1,17 +1,5 @@
 /* all */
-.backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 100;
-    /* opacity: 0;
-    visibility: hidden; */
-    background-color: rgba(46, 47, 66, 0.4);
 
-    transition: opacity var(--transition), visibility var(--transition);
-}
 .thank-you-modal {
     position: absolute;
         top: 50%;
