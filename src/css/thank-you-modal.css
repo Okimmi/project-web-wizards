@@ -45,10 +45,6 @@
 .img-ty {
     width: 100%;
 }
-
-.modal{
-
-}
 /* mobile */
 /* small */
 @media screen and (max-width: 374px) {
@@ -108,14 +104,3 @@
      }
 
 }
-
-
-
-
-
-
-
-
-
-
-.paragraph-txt-ty {}
