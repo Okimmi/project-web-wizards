@@ -28,6 +28,13 @@
     transition: opacity var(--transition), visibility var(--transition), transform var(--transition);
 }
 
+@media screen and (max-height: 903px) {
+    .your-order-modal {
+        height: 100%;
+        overflow: auto;
+    }
+}
+
 .backdrop.active {
     opacity: 1;
     visibility: visible;
@@ -347,6 +354,13 @@
             background-size: auto 467px;
         }
     }
+
+    @media screen and (max-height: 853px) {
+        .your-order-modal {
+            height: 100%;
+            overflow: auto;
+        }
+    }
 }
 
 @media screen and (min-width: 1280px) {
@@ -380,6 +394,13 @@
     screen and (min-resolution: 2dppx) {
         .your-order-modal {
             background-image: url(/img/your-order-modal/background-girl_desc@2x.png);
+        }
+    }
+
+    @media screen and (max-height: 911px) {
+        .your-order-modal {
+            height: 100%;
+            overflow: auto;
         }
     }
 
