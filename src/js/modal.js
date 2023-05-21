@@ -77,8 +77,17 @@ document.addEventListener('DOMContentLoaded', function () {
     false
   );
 
-  overlay.addEventListener('click', function () {
-    document.querySelector('.modal.active').classList.remove('active');
+  overlay.addEventListener('click', function (e) {
+    // Проверяем, является ли целевой элемент клика модальным окном или его дочерним элементом
+    var modal = document.querySelector('.modal.active');
+    if (modal && (e.target === modal || modal.contains(e.target))) {
+      // Клик внутри модального окна, ничего не делаем
+      return;
+    }
+
+    // Клик вне модального окна, закрываем окно
+    modal.classList.remove('active');
     this.classList.remove('active');
   });
+  
 }); // end ready
