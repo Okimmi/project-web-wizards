@@ -16,7 +16,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    height: 903px;
+    height: 100%;
     transform: translate(-50%, -50%) scale(0.9);
     opacity: 0;
     visibility: hidden;
