@@ -1,5 +1,8 @@
 /* all */
-
+.active{
+    opacity: 1;
+    visibility: visible;
+}
 .thank-you-modal {
     position: absolute;
         top: 50%;
