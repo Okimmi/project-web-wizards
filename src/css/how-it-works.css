@@ -27,11 +27,12 @@
   }
 }
 
+.steps-list {
+  margin-top: 44px;
+  margin-bottom: 44px;
+}
+
 @media screen and (max-width: 767px) {
-  .section-title {
-    font-size: 28px;
-    line-height: 1;
-  }
   .steps-wrapper {
     height: 112px;
     padding: 20px;
@@ -39,21 +40,8 @@
   .section-title-text.steps {
     max-width: 145px;
   }
-  .steps {
-    margin-bottom: 44px;
-  }
 }
 @media screen and (min-width: 768px) {
-  .section-title {
-    max-width: 624px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .section-title-text {
-    max-width: 509px;
-    margin-left: auto;
-    margin-right: auto;
-  }
   .steps-wrapper {
     width: 389px;
     height: 128px;
@@ -62,12 +50,17 @@
   .section-title-text.steps {
     max-width: 199px;
   }
-  .steps {
+  .steps-list {
     margin-bottom: 80px;
+  }
+
+  .how-it-works .section-title-text {
+    margin: 0 auto;
+    width: 509px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-  .steps {
+  .steps-list {
     max-width: 389px;
     margin-left: auto;
     margin-right: auto;
@@ -75,16 +68,20 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .steps {
+  .steps-list {
     display: flex;
     justify-content: center;
     align-items: baseline;
     gap: 24px;
   }
+
+  .how-it-works .section-title {
+    margin-left: auto;
+    margin-right: auto;
+    width: 624px;
+  }
 }
-.section-title-text {
-  margin-bottom: 44px;
-}
+
 .section-title-text.steps {
   text-align: left;
 
