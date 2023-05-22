@@ -8,6 +8,11 @@
   .fruits-section {
     padding-bottom: 223px;
   }
+
+  .fruits-section .section-title-text {
+    margin: 0 auto;
+    width: 547px;
+  }
 }
 /* Desktop */
 @media only screen and (min-width: 1280px) {
@@ -30,28 +35,7 @@
   }
 }
 
-.section-title {
-  font-size: 28px;
-  line-height: 1;
-}
-
 /* Tablet styles & > */
-
-@media only screen and (min-width: 768px) {
-  .section-title {
-    font-size: 40px;
-    line-height: 1.1;
-  }
-}
-
-/* Tablet styles & > */
-
-@media only screen and (min-width: 768px) {
-  .section-title-text {
-    padding-left: 38.5px;
-    padding-right: 38.5px;
-  }
-}
 
 .orgfruits-list {
   display: flex;
@@ -254,7 +238,8 @@
   letter-spacing: -0.04em;
 
   color: var(--main-background-color);
-
+  background-color: var(--main-color);
+  
   transition: color var(--transition), background-color var(--transition);
 }
 
@@ -338,6 +323,10 @@
 @media only screen and (min-width: 768px) {
   .order-icon {
     margin-top: 23.08px;
+  }
+
+  .contacts-img {
+    margin-bottom: 80px;
   }
 }
 
