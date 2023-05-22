@@ -375,9 +375,9 @@
 }
 
 .hashtags-list-item {
-  width: 125px;
+  width: 132px;
   height: 38px;
-  padding: 12px 32px;
+  padding: 12px 31px;
 
   border: 1px solid var(--main-color);
   border-radius: 1000px;
