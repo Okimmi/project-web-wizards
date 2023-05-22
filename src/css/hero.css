@@ -196,6 +196,8 @@
   cursor: pointer;
   border: none;
   border-radius: 500px;
+
+  transition: color var(--transition);
 }
 .button-shopnow:focus,
 .button-shopnow:hover {

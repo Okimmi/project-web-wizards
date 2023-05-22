@@ -16,13 +16,9 @@
   }
 }
 
-
-
-
 .section-title-wrapper {
   margin-bottom: 44px;
 }
-
 
 /* Tablet styles & > */
 
@@ -258,6 +254,8 @@
   letter-spacing: -0.04em;
 
   color: #ae1332;
+
+  transition: color var(--transition), background-color var(--transition);
 }
 
 /* Tablet styles & > */
@@ -313,6 +311,9 @@
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 
   cursor: pointer;
+
+  transition: color var(--transition), background-color var(--transition),
+    fill var(--transition);
 }
 
 /* Tablet styles & > */

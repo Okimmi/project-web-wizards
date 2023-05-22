@@ -213,7 +213,7 @@
   background-color: var(--first-btnlink-color);
   color: var(--main-color);
 
-  transition: opacity var(--transition), visibility var(--transition);
+  transition: color var(--transition), background-color var(--transition);
 }
 
 .contacts-btn:hover,
