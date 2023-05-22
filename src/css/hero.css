@@ -6,7 +6,6 @@
 .container-hero {
     background-image: url(../img/hero/strawberry-hero@1x.png), url(../img/hero/banana-hero@1x.png);
     background-repeat: no-repeat;
-    /* background-size: 56px 56px, 71px 48px; */
     background-position: top 0 right 15px, top 60px left 11px;
 }
 
@@ -27,12 +26,29 @@
   }
 }
 
-@media only screen and (min-width: 768px)
+@media only screen and (min-width: 768px) {
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .container-hero {
         background-image: url(../img/hero/strawberry-hero-tablet@2x.png), url(../img/hero/banana-hero-tablet@2x.png);
+        }
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .container-hero {
+        background-image: url(../img/hero/strawberry-hero-desc@1x.png), url(../img/hero/banana-hero-desc@1x.png);
+        background-size: 12%, 15%;
+        background-position: top 0 right 200px, top 136px left 213px;
   }
 }
+
+@media only screen and (min-width: 1280px) {
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .container-hero {
+            background-image: url(../img/hero/strawberry-hero-desc@2x.png), url(../img/hero/banana-hero-desc@2x.png);
+            }
+        }
+    }
 
 .hero::after {
     content: "";
@@ -66,12 +82,13 @@
    }
  }
 
- @media only screen and (min-width: 768px)
+ @media only screen and (min-width: 768px) {
  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .hero::after {
-        
+    .hero::after { 
+        background-image: url(../img/hero/hero-bg-tablet@2x.png);  
    }
  }
+}
 
 .title-hero {
     margin-bottom: 386px;
@@ -83,6 +100,8 @@
     letter-spacing: -0.04em;
     text-align: center;
     text-transform: uppercase;
+
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 
 .title-hero::first-line {
@@ -96,12 +115,30 @@
   }
 }
 
+@media only screen and (min-width: 1280px) {
+    .title-hero::first-line {
+        line-height: 1.2;
+    
+  }
+}
+
 @media only screen and (min-width: 768px) {
     .title-hero {
         margin-bottom: 513px;
 
         font-size: 50px;
         line-height: 1.08;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+    .title-hero {
+        margin-bottom: 483px;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 898px;
+
+        font-size: 64px;
   }
 }
 
@@ -254,10 +291,6 @@
     flex-wrap: wrap;
 }
 
-
-.hashtags-box{
-
-}
 
 .hashtags-list {
     display: flex;
