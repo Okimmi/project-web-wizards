@@ -225,7 +225,7 @@
   text-transform: uppercase;
   text-align: center;
   margin: auto;
-  rotate: -14deg;
+  transform: rotate(-14deg);
 }
 
 @media only screen and (min-width: 768px) {
