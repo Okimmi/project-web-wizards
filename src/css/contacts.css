@@ -1,26 +1,24 @@
+/* Mobile */
+/* .section-contacts {
+    padding-top: 133px;
+} */
+/* Tablet */
+/* @media only screen and (min-width: 768px) {
+    .section-contacts {
+        padding-top: 223px;
+    }
+} */
+/* Desktop */
+/* @media only screen and (min-width: 1280px) {
+    .section-contacts {
+        padding-top: 239px;
+    }
+} */
+
+
 .container-contacts {
     position: relative;
 }
-
-
-
-/* Mobile */
-.container-contacts .section-contacts {
-    padding-top: 133px;
-}
-/* Tablet */
-@media only screen and (min-width: 768px) {
-    .container-contacts .section-contacts {
-        padding-top: 223px;
-    }
-}
-/* Desktop */
-@media only screen and (min-width: 1280px) {
-    .container-contacts .section-contacts {
-        padding-top: 239px;
-    }
-}
-
 
 
 /* Mobile */
@@ -60,6 +58,8 @@
 
 .contacts-img {
     margin-bottom: 80px;
+    max-width: 100%;
+    height: auto;
 }
 
 .contacts-list{
@@ -81,35 +81,40 @@
 }
 
 
+
+
 .contacts-item-img{
     background: url(oriol-portell-AbwqpFnBDms-unsplash.jpg);
     border-radius: 20px;
  }
-/* For Mob sizes img */
+
+
+/* For Mob sizes img > 375px */
 .contacts-item-1{
     max-width: 335px;
-    min-height: 476px;
+    height: 476px;
 }
 /* For Tablet sizes img */
 @media only screen and (min-width: 768px) {
     .contacts-item-1 {
       max-width: 344px;
-      min-height: 480px;
+      height: 480px;
     }
     .contacts-item-2 {
         max-width: 344px;
-        min-height: 480px;
+        height: 480px;
+        width: 100%;
     }
   }
 /* For Desktop sizes img */
 @media only screen and (min-width: 1280px) {
     .contacts-item-1 {
     max-width: 792px;
-    min-height: 502px;
+    height: 502px;
     }
     .contacts-item-2 {
-        max-width: 400px;
-        min-height: 502px;  
+    max-width: 400px;
+    height: 502px;  
     }
 }
 /* Hidden second img < 768 px */
@@ -118,16 +123,18 @@
     display: none;
    }
  }
+/* For Mob sizes img < 374px*/
+@media only screen and (max-width: 374px) {
+    .contacts-item-1{
+        width: 100%;
+        height:auto;
+    }
+ }
 
 
 
 
- /* Hidden section description < 768 px */
-@media only screen and (max-width: 767px) {
-  .contacts-subscribe-desc {
-    display: none;
-  }
-}
+
 /* For Tablet & Desktop */
 @media only screen and (min-width: 768px) {
 .contacts-subscribe-desc {
@@ -144,39 +151,62 @@
 }
 } 
 
+ /* Hidden section description < 768 px */
+ @media only screen and (max-width: 767px) {
+    .contacts-subscribe-desc {
+      display: none;
+    }
+  }
+
+
 
 
 .contacts-desc-text {
     margin-bottom: 80px;
     font-size: 14px;
+    padding: 0;
 }
 
 
+.contacts-subscribe-email{
+    position: relative;
+}
 
-.contacts-subscribe-email {
+
+.contacts-email {
     width: 292px;
     height: 48px;
     padding: 15px 105px 15px 15px;
 
-    opacity: 0.3;
-    border-radius: 100px;
     border: 1px solid;
-    border-color: var(--main-color);
+    border-radius: 100px;
     background-color: transparent;
+    border-color: var(--main-color);
+    opacity: 0.3;
     outline: none;
 }
-.contacts-subscribe-email:not(:placeholder-shown):required:invalid {
-    border: 2px solid;
-    border-color: rgb(255, 0, 0);
-}
-.contacts-subscribe-email:not(:placeholder-shown):required:valid {
-    border: 2px solid;
-    border-color: var(--btn-background-color);
-}
-.contacts-subscribe-email::placeholder {
-    color: var(--main-color);
-}
 
+
+.contacts-email:not(:placeholder-shown):required:invalid {
+    outline: rgba(255, 0, 0, 1) solid 1px;
+    outline-offset: -1px;
+    opacity: 1;
+
+    color: var(--main-color);
+    border:none;
+}
+.contacts-email:not(:placeholder-shown):required:valid {
+    outline: rgba(157, 193, 98, 1) solid 1px;
+    outline-offset: -1px;
+    opacity: 1;
+
+    color: var(--main-color);
+    border:none;
+}
+.contacts-email::placeholder {
+    color: var(--main-color);
+    outline: none;
+}
 
 
 .contacts-btn {
@@ -186,17 +216,23 @@
 
     padding: 15px 35px;
     border-radius: 100px;
-    right: 100px;
+    top: 0;
+    
+    left: 100%;
+    transform: translateX(-100%);
 
     font-weight: 400;
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.04em;
     text-transform: capitalize;
+    cursor: pointer;
 
     border: transparent;
-    background: var(--first-btnlink-color);
+    background-color: var(--first-btnlink-color);
     color: var(--main-color);
+
+    transition: opacity var(--transition), visibility var(--transition);
 }
 
 .contacts-btn:hover,
