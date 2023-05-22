@@ -21,7 +21,7 @@
 
     
     <script type="module" crossorigin src="/project-web-wizards/assets/index-7b255278.js"></script>
-    <link rel="stylesheet" href="/project-web-wizards/assets/index-cc06a3ed.css">
+    <link rel="stylesheet" href="/project-web-wizards/assets/index-64bcfcf1.css">
   </head>
   <body>
     <header class="header">
@@ -467,8 +467,8 @@
 
   </div>
 </section>
-      <section class="section-contacts section" id="Contacts">
-  <div class="container-contacts container">
+      <section class="section section-contacts" id="Contacts">
+  <div class="container container-contacts">
     <h2 class="section-title contacts-title">Fresh Harvest Box has got you covered</h2>
     <div class="contacts-img">
     <ul class="contacts-list list">
@@ -524,21 +524,25 @@
 
     <div class="contacts-subscribe-desc">
       <p class="section-title-text contacts-desc-text">Our boxes are packed with delicious, nutritious fruits and vegetables, perfect for anyone looking to eat healthier or support local farmers. Order your box today and start enjoying the best that nature has to offer!</p>
-    
-      <form class="contacts-subscribe">
-      <input 
-      class="contacts-subscribe-email"
-      type = "email"
-      name="contacts-email"
-      id="contacts_email"
-      pattern = "[a-z0-9]+@[a-z0-9.-]+.[a-z]"
-      placeholder="Enter email..."
-      required
-      >
-      <button class="contacts-btn js-open-modal" data-modal="2" type="submit">Send</button>
+  
+      <form class="contacts-subscribe" name="subscribe" autocomplete="on">
+        <label class="visually-hidden" for="contacts-user-email">Email</label>
+          <div class="contacts-subscribe-email">
+            <input
+            class="contacts-email"
+            type="email"
+            name="email"
+            id="contacts-user-email"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            placeholder="Enter email..."
+            minlength="2"
+            required
+            />
+            <button type="submit" class="contacts-btn js-open-modal" data-modal="2">Send</button>
+          </div>
       </form>
     </div>
-    
+
   </div>
 </section>
     </main>
