@@ -78,8 +78,7 @@
 
 .contacts-item-img {
   border-radius: 20px;
-  height: 100%;
-  width: auto;
+  width: 100%;
 }
 
 /* For Mob sizes img > 375px */
