@@ -253,7 +253,7 @@
   line-height: 1.29;
   letter-spacing: -0.04em;
 
-  color: #ae1332;
+  color: var(--main-background-color);
 
   transition: color var(--transition), background-color var(--transition);
 }
@@ -276,7 +276,7 @@
 .price-button:hover,
 .price-button:focus {
   color: var(--main-color);
-  background-color: #ae1332;
+  background-color: var(--main-background-color);
 }
 
 .order-button {
