@@ -5,7 +5,8 @@
 
    @media only screen and (min-width: 768px) {
     .hero {
-        padding-top: 64px;   
+        padding-top: 64px;  
+        padding-bottom: 137px; 
      }
    }
 
@@ -257,6 +258,7 @@
 @media only screen and (min-width: 1280px) {
     .hero-wraper-box {
         height: 612px;
+        justify-content: flex-start;
         column-gap: 658px;
         position: absolute;
         top: 336px;
