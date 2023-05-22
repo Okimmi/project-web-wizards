@@ -237,7 +237,8 @@
   line-height: 1.29;
   letter-spacing: -0.04em;
 
-  color: #ae1332;
+  color: var(--main-background-color);
+  background-color: var(--main-color);
 }
 
 /* Tablet styles & > */
