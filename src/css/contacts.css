@@ -164,6 +164,7 @@
 .contacts-desc-text {
     margin-bottom: 80px;
     font-size: 14px;
+    padding: 0;
 }
 
 
@@ -204,7 +205,6 @@
 }
 .contacts-email::placeholder {
     color: var(--main-color);
-    opacity: 0.3;
     outline: none;
 }
 
