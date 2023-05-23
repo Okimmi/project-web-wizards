@@ -168,7 +168,7 @@
   outline: none;
 }
 
-.contacts-email:not(:placeholder-shown):required:invalid {
+.contacts-email:not(:placeholder-shown):required:invalid  {
   outline: rgba(255, 0, 0, 1) solid 1px;
   outline-offset: -1px;
   opacity: 1;
@@ -176,6 +176,10 @@
   color: var(--main-color);
   border: none;
 }
+.contacts-email:not(:placeholder-shown):required:invalid + .contacts-btn {
+    pointer-events: none;
+  }
+
 .contacts-email:not(:placeholder-shown):required:valid {
   outline: rgba(157, 193, 98, 1) solid 1px;
   outline-offset: -1px;
@@ -187,6 +191,10 @@
 .contacts-email::placeholder {
   color: var(--main-color);
   outline: none;
+}
+
+.contacts-email:placeholder-shown + .contacts-btn{
+pointer-events: none;
 }
 
 .contacts-btn {
