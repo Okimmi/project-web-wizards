@@ -193,6 +193,10 @@
   outline: none;
 }
 
+.contacts-email:placeholder-shown + .contacts-btn{
+pointer-events: none;
+}
+
 .contacts-btn {
   position: absolute;
   width: 102px;
