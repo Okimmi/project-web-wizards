@@ -1,23 +1,8 @@
-/* For section contacts need > padding */
-/* Mobile */
-.fruits-section {
-  padding-bottom: 133px;
-}
 /* Tablet */
 @media only screen and (min-width: 768px) {
-  .fruits-section {
-    padding-bottom: 223px;
-  }
-
   .fruits-section .section-title-text {
     margin: 0 auto;
     width: 547px;
-  }
-}
-/* Desktop */
-@media only screen and (min-width: 1280px) {
-  .fruits-section {
-    padding-bottom: 239px;
   }
 }
 
@@ -239,7 +224,7 @@
 
   color: var(--main-background-color);
   background-color: var(--main-color);
-  
+
   transition: color var(--transition), background-color var(--transition);
 }
 

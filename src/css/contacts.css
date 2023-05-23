@@ -1,25 +1,14 @@
-/* Mobile */
-/* .section-contacts {
-    padding-top: 133px;
-} */
-/* Tablet */
-/* @media only screen and (min-width: 768px) {
-    .section-contacts {
-        padding-top: 223px;
-    }
-} */
-/* Desktop */
-/* @media only screen and (min-width: 1280px) {
-    .section-contacts {
-        padding-top: 239px;
-    }
-} */
-
 .container-contacts {
   position: relative;
 }
 
 /* Mobile */
+
+.section-contacts {
+  padding-top: 133px;
+  padding-bottom: 80px;
+}
+
 .contacts-title {
   position: absolute;
 
@@ -40,6 +29,11 @@
     left: 60px;
     font-size: 54px;
   }
+
+  .section-contacts {
+    padding-top: 223px;
+    padding-bottom: 144px;
+  }
 }
 /* Desktop */
 @media only screen and (min-width: 1280px) {
@@ -49,6 +43,11 @@
     height: 128px;
     top: -89px;
     left: 268px;
+  }
+
+  .section-contacts {
+    padding-top: 239px;
+    padding-bottom: 150px;
   }
 }
 
@@ -168,7 +167,7 @@
   outline: none;
 }
 
-.contacts-email:not(:placeholder-shown):required:invalid  {
+.contacts-email:not(:placeholder-shown):required:invalid {
   outline: rgba(255, 0, 0, 1) solid 1px;
   outline-offset: -1px;
   opacity: 1;
@@ -177,8 +176,8 @@
   border: none;
 }
 .contacts-email:not(:placeholder-shown):required:invalid + .contacts-btn {
-    pointer-events: none;
-  }
+  pointer-events: none;
+}
 
 .contacts-email:not(:placeholder-shown):required:valid {
   outline: rgba(157, 193, 98, 1) solid 1px;
@@ -193,8 +192,8 @@
   outline: none;
 }
 
-.contacts-email:placeholder-shown + .contacts-btn{
-pointer-events: none;
+.contacts-email:placeholder-shown + .contacts-btn {
+  pointer-events: none;
 }
 
 .contacts-btn {
