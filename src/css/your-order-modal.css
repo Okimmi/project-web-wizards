@@ -21,7 +21,7 @@
   opacity: 0;
   visibility: hidden;
 
-  width: 100%;
+  max-width: 335px;
   overflow: hidden;
   background-color: var(--main-color);
   border-radius: 20px;
@@ -233,12 +233,6 @@
   }
 }
 
-@media screen and (min-width: 335px) and (max-width: 767px) {
-  .order-modal-container {
-    width: 335px;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .order-modal-form-label {
     align-items: flex-start;
@@ -272,7 +266,7 @@
   }
 
   .your-order-modal {
-    width: 704px;
+    max-width: 704px;
     height: 853px;
   }
 
@@ -360,7 +354,7 @@
 
 @media screen and (min-width: 1280px) {
   .your-order-modal {
-    width: 891px;
+    max-width: 891px;
     height: 911px;
   }
 
