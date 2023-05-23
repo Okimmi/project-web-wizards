@@ -1,27 +1,28 @@
-.container-img-gif {
+.wrap-gif {
   display: block;
+  width: 100%;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
-
-  background-image: url(/img/how-it-works/image-how-it-works.gif);
-  background-position: center;
-  background-size: cover;
+  object-fit: cover;
   border-radius: 20px;
 }
 
-.container-img-gif {
-  max-width: 335px;
-  min-height: 476px;
+@media screen and (max-width: 767px) {
+  .wrap-gif {
+    max-width: 335px;
+    min-height: 476px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-  .container-img-gif {
+  .wrap-gif {
     max-width: 704px;
     min-height: 476px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .container-img-gif {
+  .wrap-gif {
     max-width: 860px;
     min-height: 476px;
   }
