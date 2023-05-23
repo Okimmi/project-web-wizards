@@ -1,8 +1,13 @@
 .wrap-gif {
   display: block;
+  width: 100%;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
+  object-fit: cover;
+  border-radius: 20px;
 }
+
 @media screen and (max-width: 767px) {
   .wrap-gif {
     max-width: 335px;
@@ -122,9 +127,4 @@
   .steps-item:not(:last-child) {
     margin-bottom: 20px;
   }
-}
-.wrap-gif {
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
 }
