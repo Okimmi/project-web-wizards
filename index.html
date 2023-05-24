@@ -19,9 +19,11 @@
       rel="stylesheet"
     />
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     
     <script type="module" crossorigin src="/project-web-wizards/assets/index-7b255278.js"></script>
-    <link rel="stylesheet" href="/project-web-wizards/assets/index-80755f8a.css">
+    <link rel="stylesheet" href="/project-web-wizards/assets/index-4481f4ca.css">
   </head>
   <body>
     <header class="header">
@@ -185,7 +187,7 @@
       gift, our fruit baskets are the perfect choice.
     </p>
     <ul class="steps-list">
-      <li class="steps-item">
+      <li class="steps-item" data-aos="flip-right">
         <div class="steps-wrapper">
           <div class="steps-title first">
             <h3 class="title-wrapper">First Step</h3>
@@ -196,7 +198,7 @@
           </p>
         </div>
       </li>
-      <li class="steps-item">
+      <li class="steps-item" data-aos="flip-right" data-aos-delay="200">
         <div class="steps-wrapper">
           <div class="steps-title second">
             <h3 class="title-wrapper">Second Step</h3>
@@ -206,7 +208,7 @@
           </p>
         </div>
       </li>
-      <li class="steps-item">
+      <li class="steps-item" data-aos="flip-right" data-aos-delay="400">
         <div class="steps-wrapper">
           <div class="steps-title third">
             <h3 class="title-wrapper">Third Step</h3>
@@ -231,261 +233,365 @@
 
       <section class="fruits-section section" id="Fruits">
   <div class="container">
-
     <div class="section-title-wrapper">
-
       <h2 class="section-title">ORGANIC FRUITS</h2>
 
-      <p class="section-title-text">Our organic fruits are hand-picked from local farms and delivered straight to your
-        doorstep, ensuring that you get the
-        freshest and most nutritious produce possible. We offer a wide selection of organic fruits grown without the use
-        of
-        harmful pesticides or chemicals.</p>
-
+      <p class="section-title-text">
+        Our organic fruits are hand-picked from local farms and delivered
+        straight to your doorstep, ensuring that you get the freshest and most
+        nutritious produce possible. We offer a wide selection of organic fruits
+        grown without the use of harmful pesticides or chemicals.
+      </p>
     </div>
 
     <ul class="orgfruits-list list">
-
       <li class="orgfruits-item-wrapper">
-
         <div class="orgfruits-item strawberry">
-
           <div class="orgfruits-item-discrb">
             <h3 class="subsection-title">Strawberry</h3>
             <p class="subsection-title-text">Plant</p>
           </div>
 
           <picture>
+            <source
+              srcset="/project-web-wizards/assets/strawberry@1x-ecad31fc.webp 1x, /project-web-wizards/assets/strawberry@2x-a69fda79.webp 2x"
+              type="image/webp"
+            />
 
-            <source srcset="/project-web-wizards/assets/strawberry@1x-ecad31fc.webp 1x, /project-web-wizards/assets/strawberry@2x-a69fda79.webp 2x" type="image/webp">
+            <source
+              srcset="/project-web-wizards/assets/strawberry@1x-41695af1.png 1x, /project-web-wizards/assets/strawberry@2x-7c4dbd3c.png 2x"
+              type="image/png"
+            />
 
-            <source srcset="/project-web-wizards/assets/strawberry@1x-41695af1.png 1x, /project-web-wizards/assets/strawberry@2x-7c4dbd3c.png 2x" type="image/png">
-
-            <img class="img-orgfruits" src="/project-web-wizards/assets/strawberry@1x-41695af1.png" alt="strawberry" width="295" loading="lazy">
-
+            <img
+              class="img-orgfruits"
+              src="/project-web-wizards/assets/strawberry@1x-41695af1.png"
+              alt="strawberry"
+              width="295"
+              loading="lazy"
+            />
           </picture>
 
-          <button class="price-button js-open-modal" type="button" data-modal="1">100 UAH / kg</button>
-
+          <button
+            class="price-button js-open-modal"
+            type="button"
+            data-modal="1"
+          >
+            100 UAH / kg
+          </button>
         </div>
-
       </li>
 
       <li class="orgfruits-item-wrapper">
-
         <div class="orgfruits-item banana">
-
           <div class="orgfruits-item-discrb">
             <h3 class="subsection-title">Banana</h3>
             <p class="subsection-title-text">Plant</p>
           </div>
 
           <picture>
+            <source
+              srcset="/project-web-wizards/assets/banana@1x-c41812a5.webp 1x, /project-web-wizards/assets/banana@2x-239ee49e.webp 2x"
+              type="image/webp"
+            />
 
-            <source srcset="/project-web-wizards/assets/banana@1x-c41812a5.webp 1x, /project-web-wizards/assets/banana@2x-239ee49e.webp 2x" type="image/webp">
+            <source
+              srcset="/project-web-wizards/assets/banana@1x-224b9be6.png 1x, /project-web-wizards/assets/banana@2x-06c3412e.png 2x"
+              type="image/png"
+            />
 
-            <source srcset="/project-web-wizards/assets/banana@1x-224b9be6.png 1x, /project-web-wizards/assets/banana@2x-06c3412e.png 2x" type="image/png">
-
-            <img class="img-orgfruits" src="/project-web-wizards/assets/banana@1x-224b9be6.png" alt="banana" width="295" loading="lazy">
-
+            <img
+              class="img-orgfruits"
+              src="/project-web-wizards/assets/banana@1x-224b9be6.png"
+              alt="banana"
+              width="295"
+              loading="lazy"
+            />
           </picture>
 
-          <button class="price-button js-open-modal" type="button" data-modal="1">80 UAH / kg</button>
-
+          <button
+            class="price-button js-open-modal"
+            type="button"
+            data-modal="1"
+          >
+            80 UAH / kg
+          </button>
         </div>
-
       </li>
 
       <li class="orgfruits-item-wrapper">
-
         <div class="orgfruits-item watermelon">
-
           <div class="orgfruits-item-discrb">
             <h3 class="subsection-title">Watermelon</h3>
             <p class="subsection-title-text">Plant</p>
           </div>
 
           <picture>
+            <source
+              srcset="/project-web-wizards/assets/watermelon@1x-2b1d060c.webp 1x, /project-web-wizards/assets/watermelon@2x-0d70e04b.webp 2x"
+              type="image/webp"
+            />
 
-            <source srcset="/project-web-wizards/assets/watermelon@1x-2b1d060c.webp 1x, /project-web-wizards/assets/watermelon@2x-0d70e04b.webp 2x" type="image/webp">
+            <source
+              srcset="/project-web-wizards/assets/watermelon@1x-1db639c7.png 1x, /project-web-wizards/assets/watermelon@2x-96c2ea70.png 2x"
+              type="image/png"
+            />
 
-            <source srcset="/project-web-wizards/assets/watermelon@1x-1db639c7.png 1x, /project-web-wizards/assets/watermelon@2x-96c2ea70.png 2x" type="image/png">
-
-            <img class="img-orgfruits" src="/project-web-wizards/assets/watermelon@1x-1db639c7.png" alt="watermelon" width="295" loading="lazy">
-
+            <img
+              class="img-orgfruits"
+              src="/project-web-wizards/assets/watermelon@1x-1db639c7.png"
+              alt="watermelon"
+              width="295"
+              loading="lazy"
+            />
           </picture>
 
-          <button class="price-button js-open-modal" type="button" data-modal="1">40 UAH / kg</button>
-
+          <button
+            class="price-button js-open-modal"
+            type="button"
+            data-modal="1"
+          >
+            40 UAH / kg
+          </button>
         </div>
-
       </li>
 
       <li class="orgfruits-item-wrapper">
-
         <div class="orgfruits-item lime">
-
           <div class="orgfruits-item-discrb">
             <h3 class="subsection-title">Lime</h3>
             <p class="subsection-title-text">Plant</p>
           </div>
 
           <picture>
+            <source
+              srcset="/project-web-wizards/assets/lime@1x-229de5bf.webp 1x, /project-web-wizards/assets/lime@2x-a4d91703.webp 2x"
+              type="image/webp"
+            />
 
-            <source srcset="/project-web-wizards/assets/lime@1x-229de5bf.webp 1x, /project-web-wizards/assets/lime@2x-a4d91703.webp 2x" type="image/webp">
+            <source
+              srcset="/project-web-wizards/assets/lime@1x-99279965.png 1x, /project-web-wizards/assets/lime@2x-9e00f4d7.png 2x"
+              type="image/png"
+            />
 
-            <source srcset="/project-web-wizards/assets/lime@1x-99279965.png 1x, /project-web-wizards/assets/lime@2x-9e00f4d7.png 2x" type="image/png">
-
-            <img class="img-orgfruits" src="/project-web-wizards/assets/lime@1x-99279965.png" alt="lime" width="295" loading="lazy">
-
+            <img
+              class="img-orgfruits"
+              src="/project-web-wizards/assets/lime@1x-99279965.png"
+              alt="lime"
+              width="295"
+              loading="lazy"
+            />
           </picture>
 
-          <button class="price-button js-open-modal" type="button" data-modal="1">60 UAH / kg</button>
-
+          <button
+            class="price-button js-open-modal"
+            type="button"
+            data-modal="1"
+          >
+            60 UAH / kg
+          </button>
         </div>
-
       </li>
 
       <li class="orgfruits-item-wrapper">
-
         <div class="orgfruits-item apple">
-
           <div class="orgfruits-item-discrb">
             <h3 class="subsection-title">Apple</h3>
             <p class="subsection-title-text">Plant</p>
           </div>
 
           <picture>
+            <source
+              srcset="/project-web-wizards/assets/apple@1x-b1b404a6.webp 1x, /project-web-wizards/assets/apple@2x-d61dcbc8.webp 2x"
+              type="image/webp"
+            />
 
-            <source srcset="/project-web-wizards/assets/apple@1x-b1b404a6.webp 1x, /project-web-wizards/assets/apple@2x-d61dcbc8.webp 2x" type="image/webp">
+            <source
+              srcset="/project-web-wizards/assets/apple@1x-19a0bad7.png 1x, /project-web-wizards/assets/apple@2x-f4e10088.png 2x"
+              type="image/png"
+            />
 
-            <source srcset="/project-web-wizards/assets/apple@1x-19a0bad7.png 1x, /project-web-wizards/assets/apple@2x-f4e10088.png 2x" type="image/png">
-
-            <img class="img-orgfruits" src="/project-web-wizards/assets/apple@1x-19a0bad7.png" alt="apple" width="295" loading="lazy">
-
+            <img
+              class="img-orgfruits"
+              src="/project-web-wizards/assets/apple@1x-19a0bad7.png"
+              alt="apple"
+              width="295"
+              loading="lazy"
+            />
           </picture>
 
-          <button class="price-button js-open-modal" type="button" data-modal="1">50 UAH / kg</button>
-
+          <button
+            class="price-button js-open-modal"
+            type="button"
+            data-modal="1"
+          >
+            50 UAH / kg
+          </button>
         </div>
-
       </li>
 
       <li class="orgfruits-item-wrapper">
-
         <div class="orgfruits-item peach">
-
           <div class="orgfruits-item-discrb">
             <h3 class="subsection-title">Peach</h3>
             <p class="subsection-title-text">Plant</p>
           </div>
 
           <picture>
+            <source
+              srcset="/project-web-wizards/assets/peach@1x-c1f7b573.webp 1x, /project-web-wizards/assets/peach@2x-e0316a1f.webp 2x"
+              type="image/webp"
+            />
 
-            <source srcset="/project-web-wizards/assets/peach@1x-c1f7b573.webp 1x, /project-web-wizards/assets/peach@2x-e0316a1f.webp 2x" type="image/webp">
+            <source
+              srcset="/project-web-wizards/assets/peach@1x-961b3c88.png 1x, /project-web-wizards/assets/peach@2x-9d198e75.png 2x"
+              type="image/png"
+            />
 
-            <source srcset="/project-web-wizards/assets/peach@1x-961b3c88.png 1x, /project-web-wizards/assets/peach@2x-9d198e75.png 2x" type="image/png">
-
-            <img class="img-orgfruits" src="/project-web-wizards/assets/peach@1x-961b3c88.png" alt="peach" width="295" loading="lazy">
-
+            <img
+              class="img-orgfruits"
+              src="/project-web-wizards/assets/peach@1x-961b3c88.png"
+              alt="peach"
+              width="295"
+              loading="lazy"
+            />
           </picture>
 
-          <button class="price-button js-open-modal" type="button" data-modal="1">80 UAH / kg</button>
-
+          <button
+            class="price-button js-open-modal"
+            type="button"
+            data-modal="1"
+          >
+            80 UAH / kg
+          </button>
         </div>
-
       </li>
 
       <li class="orgfruits-item-wrapper plums">
-
         <div class="orgfruits-item plums">
-
           <div class="orgfruits-item-discrb">
             <h3 class="subsection-title">Plums</h3>
             <p class="subsection-title-text">Plant</p>
           </div>
 
           <picture>
+            <source
+              srcset="/project-web-wizards/assets/plums@1x-95254ccf.webp 1x, /project-web-wizards/assets/plums@2x-1f7451c7.webp 2x"
+              type="image/webp"
+            />
 
-            <source srcset="/project-web-wizards/assets/plums@1x-95254ccf.webp 1x, /project-web-wizards/assets/plums@2x-1f7451c7.webp 2x" type="image/webp">
+            <source
+              srcset="/project-web-wizards/assets/plums@1x-9e02d177.png 1x, /project-web-wizards/assets/plums@2x-41b08e95.png 2x"
+              type="image/png"
+            />
 
-            <source srcset="/project-web-wizards/assets/plums@1x-9e02d177.png 1x, /project-web-wizards/assets/plums@2x-41b08e95.png 2x" type="image/png">
-
-            <img class="img-orgfruits" src="/project-web-wizards/assets/plums@1x-9e02d177.png" alt="plums" width="295" loading="lazy">
-
+            <img
+              class="img-orgfruits"
+              src="/project-web-wizards/assets/plums@1x-9e02d177.png"
+              alt="plums"
+              width="295"
+              loading="lazy"
+            />
           </picture>
 
-          <button class="price-button js-open-modal" type="button" data-modal="1">40 UAH / kg</button>
-
+          <button
+            class="price-button js-open-modal"
+            type="button"
+            data-modal="1"
+          >
+            40 UAH / kg
+          </button>
         </div>
-
       </li>
 
       <li class="orgfruits-item-wrapper orange">
-
         <div class="orgfruits-item orange">
-
           <div class="orgfruits-item-discrb">
             <h3 class="subsection-title">Orange</h3>
             <p class="subsection-title-text">Plant</p>
           </div>
 
           <picture>
+            <source
+              srcset="/project-web-wizards/assets/orange@1x-6756fff1.webp 1x, /project-web-wizards/assets/orange@2x-df07c1fb.webp 2x"
+              type="image/webp"
+            />
 
-            <source srcset="/project-web-wizards/assets/orange@1x-6756fff1.webp 1x, /project-web-wizards/assets/orange@2x-df07c1fb.webp 2x" type="image/webp">
+            <source
+              srcset="/project-web-wizards/assets/orange@1x-09359dd7.png 1x, /project-web-wizards/assets/orange@2x-215e78b2.png 2x"
+              type="image/png"
+            />
 
-            <source srcset="/project-web-wizards/assets/orange@1x-09359dd7.png 1x, /project-web-wizards/assets/orange@2x-215e78b2.png 2x" type="image/png">
-
-            <img class="img-orgfruits" src="/project-web-wizards/assets/orange@1x-09359dd7.png" alt="orange" width="295" loading="lazy">
-
+            <img
+              class="img-orgfruits"
+              src="/project-web-wizards/assets/orange@1x-09359dd7.png"
+              alt="orange"
+              width="295"
+              loading="lazy"
+            />
           </picture>
 
-          <button class="price-button js-open-modal" type="button" data-modal="1">60 UAH / kg</button>
-
+          <button
+            class="price-button js-open-modal"
+            type="button"
+            data-modal="1"
+          >
+            60 UAH / kg
+          </button>
         </div>
-
       </li>
 
-
-
       <li class="orgfruits-item-wrapper kiwi">
-
         <div class="orgfruits-item kiwi">
-
           <div class="orgfruits-item-discrb">
             <h3 class="subsection-title">Kiwi</h3>
             <p class="subsection-title-text">Plant</p>
           </div>
 
           <picture>
+            <source
+              srcset="/project-web-wizards/assets/kiwi@1x-8efb921f.webp 1x, /project-web-wizards/assets/kiwi@2x-98198f8c.webp 2x"
+              type="image/webp"
+            />
 
-            <source srcset="/project-web-wizards/assets/kiwi@1x-8efb921f.webp 1x, /project-web-wizards/assets/kiwi@2x-98198f8c.webp 2x" type="image/webp">
+            <source
+              srcset="/project-web-wizards/assets/kiwi@1x-a9c8cee7.png 1x, /project-web-wizards/assets/kiwi@2x-5ba4cce5.png 2x"
+              type="image/png"
+            />
 
-            <source srcset="/project-web-wizards/assets/kiwi@1x-a9c8cee7.png 1x, /project-web-wizards/assets/kiwi@2x-5ba4cce5.png 2x" type="image/png">
-
-            <img class="img-orgfruits" src="/project-web-wizards/assets/kiwi@1x-a9c8cee7.png" alt="kiwi" width="295" loading="lazy">
-
+            <img
+              class="img-orgfruits"
+              src="/project-web-wizards/assets/kiwi@1x-a9c8cee7.png"
+              alt="kiwi"
+              width="295"
+              loading="lazy"
+            />
           </picture>
 
-          <button class="price-button js-open-modal" type="button" data-modal="1">90 UAH / kg</button>
-
+          <button
+            class="price-button js-open-modal"
+            type="button"
+            data-modal="1"
+          >
+            90 UAH / kg
+          </button>
         </div>
-
       </li>
-
     </ul>
 
-    <button class="order-button js-open-modal" type="button" data-modal="1">
-
+    <button
+      class="order-button jello-horizontal js-open-modal"
+      type="button"
+      data-modal="1"
+    >
       <svg class="order-icon" width="14" height="14">
         <use href="/project-web-wizards/assets/icons-1ba8e28a.svg#icon-arrow"></use>
       </svg>
       <span class="order-button-text">ORDER</span>
-
     </button>
-
   </div>
 </section>
+
       <section class="section section-contacts" id="Contacts">
   <div class="container container-contacts">
     <h2 class="section-title contacts-title">Fresh Harvest Box has got you covered</h2>
@@ -885,6 +991,11 @@
 </div>
 
     </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <script
       defer
